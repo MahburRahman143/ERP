@@ -1,0 +1,76 @@
+body{
+    font-family: 'Segoe UI' sans-serif;
+    background: #f8f9fa;
+}
+
+
+.sidebar{
+    height: 100vh;
+    background: #171d20;
+    color: white;
+}
+.sidebar ul li {
+    margin: 2px 0px;
+}
+.menuItem.active { 
+    background-color: #2E7D32; 
+}
+.menuItem:hover { 
+    background-color: #388E3C; 
+}
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+/* .sidebar a:hover, .sidebar .active {
+    background-color: #05c1f5;
+    border-radius: 0.375rem;
+} */
+
+.profile-dropdown{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    display: none;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.profile:hover .profile-dropdown{
+    display: block;
+}
+
+.card-custom {
+    border-radius: 12px;
+    color: #000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    border: 1px solid rgb(22, 184, 212);
+    gap: 1rem;
+}
+.action-buttons .btn {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.nav-btn {
+    background-color: #00cc00;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.nav-btn:hover {
+    background-color: #009900;
+}
+.form-section {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
