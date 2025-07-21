@@ -26,7 +26,7 @@
             display: block;
             color: white;
             text-decoration: none;
-            padding: 10px 15px;
+            padding: 10px;
         }
         .sidebar a:hover, .sidebar .active {
             background-color: #05c1f5;
@@ -62,42 +62,52 @@
     </style>
 </head>
 <body>
-    <div class="container-fluid">
+    <!-- Header Satart -->
+    <div class="container-fluid d-flex justify-content-between align-items-center bg-info">
+        <div class="logo ms-3 ">
+            <img src="/Media/divine-group-logo.png" alt="divine-group-logo" class="img-flui" width="150" height="70">
+        </div>
+        <div class="profile position-relative me-3 ">
+            <div class="d-flex align-items-center gap-2">
+                <img src="/Media/user-profile.jpg" alt="user-profile" class="img-fluid rounded-circle" width="40" height="40">
+                <span class="d-none d-md-inline fw-bold">Admin</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="profile-dropdown mt-2 py-2 text-dark">
+                <a class="dropdown-item px-4 py-2" href="#">👤 My Profile</a>
+                <a class="dropdown-item px-4 py-2" href="#">⚙️ Settings</a>
+                <a class="dropdown-item px-4 py-2" href="logout.html">🚪 Logout</a>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+    <div class="container-fluid my-4">
         <div class="row ">
             <!-- Sidebar -->
-             <nav class="sidebar col-md-3 col-lg-2  d-flex flex-column align-items-center">
-                <div class="bg-white mt-2 rounded px-2 w-100 text-center ">
-                    <img src="/Media/divine-group-logo.png" alt="Divine Group logo" class="img-fluid">
-                </div>
-                <ul class="nav flex-column w-100 px-3 mt-3">
-                    <li><a class="active" href=""><i class="fa-solid fa-gauge-high me-2"></i>Dashboard</a></li>
-                    <li><a href="CRM.html"><i class="fa-solid fa-users me-2"></i> CRM</a></li>
-                    <li><a href=""><i class="fa-solid fa-user-tie me-2"></i> HR & Payroll</a></li>
-                    <li><a href="project_location.html"><i class="fa-solid fa-location-dot me-2"></i> Project Location</a></li>
-                    <li><a href=""><i class="fa-solid fa-project-diagram me-2"></i> Project</a></li>
-                    <li><a href=""> <i class="fa-solid fa-box-open me-2"></i> Products</a></li>
-                    <li><a href=""><i class="fa-solid fa-user-group me-2"></i> Customer</a></li>
-                    <li><a href=""> <i class="fa-solid fa-cart-shopping me-2"></i>Sales</a></li>
-                </ul>
-            </nav>
+            <div class="col-md-3 col-lg-2 sidebar">
+                <aside class="">
+                    <ul class="nav flex-column w-100 px-3 mt-3">
+                        <li class="menuItem"><a class="menuItem " href="index.html"><i class="fa-solid fa-gauge-high me-2"></i>Dashboard</a></li>
+                        <li class="menuItem"><a href="CRM.html"><i class="fa-solid fa-users me-2"></i> CRM</a></li>
+                        <li class="menuItem"><a href=""><i class="fa-solid fa-user-tie me-2"></i> HR & Payroll</a></li>
+                        <li class="menuItem"><a href="project_location.html"><i class="fa-solid fa-location-dot me-2"></i> Project Location</a></li>
+                        <li class="menuItem"><a href="project.html"><i class="fa-solid fa-project-diagram me-2"></i> Project</a></li>
+                        <li class="menuItem"><a data-bs-toggle="collapse" role="button" href=""> <i class="fa-solid fa-box-open me-2"></i> Products  ▾</a>
+                            <div>
+
+                            </div>
+                        </li>
+                        <li class="menuItem"><a href=""><i class="fa-solid fa-user-group me-2"></i> Customer</a></li>
+                        <li class="menuItem"><a href="sales.html"> <i class="fa-solid fa-cart-shopping me-2"></i>Sales</a></li>
+                        <li class="menuItem"><a href=""> <i class="fa-solid fa-cart-shopping me-2"></i>Sales Report</a></li>
+                        <li class="menuItem"><a href=""> <i class="fa-solid fa-cart-shopping me-2"></i>Accounting</a></li>
+                        <li class="menuItem"><a href=""> <i class="fa-solid fa-cart-shopping me-2"></i>User Management</a></li>
+                    </ul>
+                </aside>
+            </div>
 
               <!-- Main Content -->
             <main class="col-md-9 col-lg-10 ms-sm-auto  px-md-4">
-                <nav class="header text-white py-2 px-2 d-flex justify-content-between align-items-center">
-                    <h1>Divine ERP</h1>
-                    <div class="position-relative profile">
-                        <div class="d-flex align-items-center gap-2">
-                            <img src="https://i.pravatar.cc/40?u=divine" class="rounded-circle border border-white" width="40" height="40" />
-                            <span class="d-none d-md-inline">Admin</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <div class="profile-dropdown mt-2 py-2 text-dark">
-                            <a class="dropdown-item px-4 py-2" href="#">👤 My Profile</a>
-                            <a class="dropdown-item px-4 py-2" href="#">⚙️ Settings</a>
-                            <a class="dropdown-item px-4 py-2" href="logout.html">🚪 Logout</a>
-                        </div>
-                    </div>
-                </nav>
                 <!-- Dashboard Content -->
                 <div class="container">
                     <h2 class="text-dark fw-semibold">Welcome to Divine ERP Dashboard </h2>
@@ -126,7 +136,7 @@
                                 <div>Total : 2</div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 hover-effect">
                             <div class="card-custom bg-primary text-white">
                                 <div class="icon"><i class="fas fa-user-shield"></i></div>
                                 <div class="fw-bold">Customers</div>

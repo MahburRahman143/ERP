@@ -6,86 +6,85 @@
     <title>SmartERP || CRM</title>
     <!-- <link rel="stylesheet" href="/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="/CSS/all.min.css"> -->
-    <link rel="stylesheet" href="/CSS/CRM.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/CRM.css">
 </head>
 <body>
-    <nav class="navbar bg-info">
-        <div class="container-fluid ">
-            <div class="row text-white  d-flex justify-content-between align-items-center">
-                <div class="col-6">
-                    <a href="#" class="">
-                        <img src="/Media/divine-group-logo.png" alt="" class="img-fluid" width="250" height="100">
-                    </a>
-                </div>
-                <div class="col-6">
-                    <div class="position-relative profile">
-                        <div>
-                            <img src="/Media/divine-group-logo.png" alt="" class="rounded-circle border border-white" width="40" height="40">
-                            <span class="d-none d-md-inline">Admin</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <div class="profile-dropdown mt-2 py-2 text-dark">
-                            <a class="dropdown-item px-4 py-2" href="#">👤 My Profile</a>
-                            <a class="dropdown-item px-4 py-2" href="#">⚙️ Settings</a>
-                            <a class="dropdown-item px-4 py-2" href="logout.html">🚪 Logout</a>
-                        </div>
-                    </div>
-                </div>
+    <!-- Header Satart -->
+    <div class="container-fluid d-flex justify-content-between align-items-center bg-info">
+        <div class="logo ms-3 ">
+            <img src="/Media/divine-group-logo.png" alt="divine-group-logo" class="img-flui" width="150" height="70">
+        </div>
+        <div class="profile position-relative me-3 ">
+            <div class="d-flex align-items-center gap-2">
+                <img src="/Media/user-profile.jpg" alt="user-profile" class="img-fluid rounded-circle" width="40" height="40">
+                <span class="d-none d-md-inline fw-bold">Admin</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="profile-dropdown mt-2 py-2 text-dark">
+                <a class="dropdown-item px-4 py-2" href="#">👤 My Profile</a>
+                <a class="dropdown-item px-4 py-2" href="#">⚙️ Settings</a>
+                <a class="dropdown-item px-4 py-2" href="logout.html">🚪 Logout</a>
             </div>
         </div>
-    </nav>
+    </div>
+    <!-- Header End -->
     <div class="container-fluid my-4">
         <div class="row">
-            <aside class="sidebar col-md-3 col-lg-2">
-                <ul class="nav flex-column w-100 px-3 mt-3">
-                    <li class="menuItem"><a class="menuItem " href="index.html"><i class="fa-solid fa-gauge-high me-2"></i>Dashboard</a></li>
-                    <li class="menuItem"><a href=""><i class="fa-solid fa-users me-2"></i> CRM</a></li>
-                    <li class="menuItem"><a href=""><i class="fa-solid fa-user-tie me-2"></i> HR & Payroll</a></li>
-                    <li class="menuItem"><a href="project_location.html"><i class="fa-solid fa-location-dot me-2"></i> Project Location</a></li>
-                    <li class="menuItem"><a href=""><i class="fa-solid fa-project-diagram me-2"></i> Project</a></li>
-                    <li class="menuItem"><a href=""> <i class="fa-solid fa-box-open me-2"></i> Products</a></li>
-                    <li class="menuItem"><a href=""><i class="fa-solid fa-user-group me-2"></i> Customer</a></li>
-                    <li class="menuItem"><a href=""> <i class="fa-solid fa-cart-shopping me-2"></i>Sales</a></li>
-                </ul>
-            </aside>
+            <div class="col-md-3 col-lg-2 sidebar">
+                <aside class="">
+                    <ul class="nav flex-column w-100 px-3 mt-3">
+                        <li class="menuItem"><a class="menuItem " href="index.html"><i class="fa-solid fa-gauge-high me-2"></i>Dashboard</a></li>
+                        <li class="menuItem"><a href="CRM.html"><i class="fa-solid fa-users me-2"></i> CRM</a></li>
+                        <li class="menuItem"><a href=""><i class="fa-solid fa-user-tie me-2"></i> HR & Payroll</a></li>
+                        <li class="menuItem"><a href="project_location.html"><i class="fa-solid fa-location-dot me-2"></i> Project Location</a></li>
+                        <li class="menuItem"><a href="project.html"><i class="fa-solid fa-project-diagram me-2"></i> Project</a></li>
+                        <li class="menuItem"><a href=""> <i class="fa-solid fa-box-open me-2"></i> Products</a></li>
+                        <li class="menuItem"><a href=""><i class="fa-solid fa-user-group me-2"></i> Customer</a></li>
+                        <li class="menuItem"><a href="sales.html"> <i class="fa-solid fa-cart-shopping me-2"></i>Sales</a></li>
+                        <li class="menuItem"><a href=""> <i class="fa-solid fa-cart-shopping me-2"></i>Sales Report</a></li>
+                        <li class="menuItem"><a href=""> <i class="fa-solid fa-cart-shopping me-2"></i>Accounting</a></li>
+                        <li class="menuItem"><a href=""> <i class="fa-solid fa-cart-shopping me-2"></i>User Management</a></li>
+                    </ul>
+                </aside>
+            </div>
             <div class="col-md-9 col-lg-10  ms-sm-auto px-md-4">
-                <div class="row " style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; background: #00939C;">
-                    <h4 class="fw-bold text-white py-2 px-4" style="background: #004C50;">CRM Dashboard</h4>
+                <div class="row" style="background: #7bd2e4; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+                    <h4 class="fw-bold text-white py-2 px-4" style="background: #1795da;">CRM Dashboard</h4>
                     <div class="col-md-3 my-4">
-                        <div class="card-custom bg-info d-flex flex-column justify-content-between align-items-center">
+                        <div class="card-custom d-flex flex-column justify-content-between align-items-center">
                             <div class="fw-bold border rounded-circle px-4 py-4">110</div>
                             <div class="fw-bold">Total Leads</div>
                         </div>
                     </div>
                     <div class="col-md-3 my-4">
-                        <div class="card-custom bg-info d-flex flex-column justify-content-between align-items-center">
+                        <div class="card-custom d-flex flex-column justify-content-between align-items-center">
                             <div class="fw-bold border rounded-circle px-4 py-4">0</div>
                             <div class="fw-bold">Total Active Leads</div>
                         </div>
                     </div>
                     <div class="col-md-3 my-4">
-                        <div class="card-custom bg-info d-flex flex-column justify-content-between align-items-center">
+                        <div class="card-custom d-flex flex-column justify-content-between align-items-center">
                             <div class="fw-bold border rounded-circle px-4 py-3">0</div>
                             <div class="fw-bold">Total Inactive Leads</div>
                         </div>
                     </div>
                     <div class="col-md-3 my-4">
-                        <div class="card-custom bg-info d-flex flex-column justify-content-between align-items-center">
+                        <div class="card-custom  d-flex flex-column justify-content-between align-items-center">
                             <div class="fw-bold border rounded-circle px-4 py-3">0</div>
                             <div class="fw-bold">Today's Leads</div>
                         </div>
                     </div>
                     <div class="col-md-3 my-4">
-                        <div class="card-custom bg-info d-flex flex-column justify-content-between align-items-center">
+                        <div class="card-custom d-flex flex-column justify-content-between align-items-center">
                             <div class="fw-bold border rounded-circle px-4 py-3">0</div>
                             <div class="fw-bold">Today's Meeting</div>
                         </div>
                     </div>
                     <div class="col-md-3 my-4">
-                        <div class="card-custom bg-info d-flex flex-column justify-content-between align-items-center ">
+                        <div class="card-custom d-flex flex-column justify-content-between align-items-center ">
                             <div class="fw-bold border rounded-circle px-4 py-3">0</div>
                             <div class="fw-bold">Today's Follow Up</div>
                         </div>
@@ -96,10 +95,10 @@
                         <i class="bi bi-list"></i> Action Button
                     </div>
                     <div class="border bg-light p-4">
-                        <div class="btn btn-primary fw-bold">Todays Call</div>
-                        <div class="btn btn-primary fw-bold mx-2">Pending call</div>
-                        <div class="btn btn-primary fw-bold">Todays Follow Up</div>
-                        <div class="btn btn-primary fw-bold mx-2">CRM Reporting</div>
+                        <a href="" class="btn btn-primary fw-bold">Todays Call</a>
+                        <a href="" class="btn btn-primary fw-bold">Pending Call</a>
+                        <a href="" class="btn btn-primary fw-bold">Todays Follow Up</a>
+                        <a href="CRM_Report.html" class="btn btn-primary fw-bold">CRM Reporting</a>
                     </div>
                     <!-- File Upload -->
                     <div class="mb-3 border bg-light p-4">
@@ -133,54 +132,46 @@
                         <button class="btn btn-outline-secondary">Show All</button>
                     </div>
                 </div>
-                <!-- Table -->
-                 <!-- <div class="row"> -->
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped align-middle">
-                            <thead class="table-secondary">
-                                <tr>
-                                    <th>SL No.</th>
-                                    <th>CRM ID</th>
-                                    <th>Profession</th>
-                                    <th>Customer Name</th>
-                                    <th>Leads Status</th>
-                                    <th>Lead Source</th>
-                                    <th>Phone</th>
-                                    <th>Project Name</th>
-                                    <th>Date</th>
-                                    <th>Assign To</th>
-                                    <th>Assigned By</th>
-                                    <th>Next Call Date</th>
-                                    <th>Last Call Date</th>
-                                    <th>Options</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>19520</td>
-                                    <td>Production</td>
-                                    <td>md edris</td>
-                                    <td>New Lead</td>
-                                    <td>MPL</td>
-                                    <td>01846982434</td>
-                                    <td>Cox Holiday Inn</td>
-                                    <td>2025-07-05</td>
-                                    <td>Tania Akter</td>
-                                    <td>Tania Akter</td>
-                                    <td>2025-07-07</td>
-                                    <td></td>
-                                    <td>
-                                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-phone"></i></button>
-                                        <button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i> Edit</button>
-                                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Delete</button>
-                                        <button class="btn btn-info btn-sm"><i class="fas fa-eye"></i> View</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                 <!-- </div> -->
+                <div class="row table-responsive">
+                    <table class="table table-bordered table-striped align-middle">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th>SL No.</th>
+                                <th>CRM ID</th>
+                                <th>Profession</th>
+                                <th>Customer Name</th>
+                                <th>Leads Status</th>
+                                <th>Lead Source</th>
+                                <th>Phone</th>
+                                <th>Project Name</th>
+                                <th>Date</th>
+                                <th>Assign To</th>
+                                <th>Assigned By</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-danger-100">
+                                <td>1</td>
+                                <td>19520</td>
+                                <td>Production</td>
+                                <td>md edris</td>
+                                <td>New Lead</td>
+                                <td>MPL</td>
+                                <td>01846982434</td>
+                                <td>Cox Holiday Inn</td>
+                                <td>2025-07-05</td>
+                                <td>Tania Akter</td>
+                                <td>Tania Akter</td>
+                                <td>
+                                    <a href="#" class="btn btn-warning btn-sm mb-1">Lead Manage</a>
+                                    <button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div> 
 

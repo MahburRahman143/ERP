@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartERP || Project Location</title>
+    <title>SmartERP || Sales</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -97,7 +97,7 @@
                         <li class="menuItem"><a href=""> <i class="fa-solid fa-box-open me-2"></i> Products</a></li>
                         <li class="menuItem"><a href=""><i class="fa-solid fa-user-group me-2"></i> Customer</a></li>
                         <li class="menuItem"><a href="sales.html"> <i class="fa-solid fa-cart-shopping me-2"></i>Sales</a></li>
-                        <li class="menuItem"><a href=""> <i class="fa-solid fa-cart-shopping me-2"></i>Sales Report</a></li>
+                        <li class="menuItem"><a href=""> <i class="fa-solid far fa-chart-bar me-2"></i>Sales Report</a></li>
                         <li class="menuItem"><a href=""> <i class="fa-solid fa-cart-shopping me-2"></i>Accounting</a></li>
                         <li class="menuItem"><a href=""> <i class="fa-solid fa-cart-shopping me-2"></i>User Management</a></li>
                     </ul>
@@ -106,8 +106,13 @@
             <div class="col-md-9 col-lg-10 px-md-4">
                 <div class="row">
                     <!-- Header -->
+                     <div class="border bg-light fw-bold p-2 mb-3">
+                        <i class="bi bi-list"></i> Saler Name Management
+                        <hr>
+                        <a href="" class="btn btn-primary">Saler Name</a>
+                    </div>
                     <div class="border bg-light fw-bold p-2">
-                        <i class="bi bi-list"></i> Project Location
+                        <i class="bi bi-list"></i> Sales
                     </div>
                     <!-- Form Section -->
                     <div class="form-section d-flex align-items-center">
@@ -123,17 +128,35 @@
                                     <!-- Modal Body with Form -->
                                     <form action="" id="locationForm">
                                         <div class="modal-body">
-                                            <div class="mb-3">
-                                                <label for="name" class="form-label">Location</label>
-                                                <input type="text" name="" id="name" class="form-control" placeholder="Enter location" required>
+                                            <div class="mb-2">
+                                                <label for="name" class="form-label">Project Name</label>
+                                                <input type="text" name="" id="name" class="form-control" placeholder="Enter project name" required>
                                             </div>
-                                            <div class="mb-3">
-                                                <label for="status" class="form-label">Status</label>
-                                                <select name="" id="status" class="form-select  px-2">
-                                                    <option value="" selected>--Select--</option>
-                                                    <option value="active">Active</option>
-                                                    <option value="inactive">Inactive</option>
+                                            <div class="mb-2">
+                                                <label for="pLocation" class="form-label">Project Location</label>
+                                                <select name="" id="pLocation" class="form-select">
+                                                    <option value="" selected>-----Select-----</option>
+                                                    <option value="">Cox Bazar</option>
+                                                    <option value="">Purbachal Dhaka</option>
                                                 </select>
+                                            </div>
+                                            <div class="mb-2">
+                                                <label for="address" class="form-label">Address</label>
+                                                <input type="text" name="" id="address" class="form-control" placeholder="Enter the Address" required>
+                                            </div>
+                                            <div class="mb-2">
+                                                <label for="facing" class="form-label">Facing</label>
+                                                <input type="text" class="form-control" id="facing" required >
+                                            </div>
+                                            <div class="form-section d-flex justify-content-between align-items-center">
+                                                <div class="mx3">
+                                                    <label for="lounchDate">Project Lounching Date</label>
+                                                    <input type="date" name="" id="lounchDate" class="form-control">
+                                                </div>
+                                                <div class="mx-3">
+                                                    <label for="handOverDate">Project Hand Over Date</label>
+                                                    <input type="date" name="" id="handOverDate" class="form-control">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -158,25 +181,31 @@
                         <button class="btn btn-outline-secondary">Show All</button>
                     </div>
                 </div>
-                <div class="row table-responsive my-3">
+                <div class="row table-responsive mb-3">
                     <table class="table table-bordered table-striped align-middle ">
                         <thead class="table-secondary">
                             <tr>
                                 <th>SL No.</th>
-                                <th>Location Name</th>
-                                <th>Status</th>
+                                <th>Customer Name</th>
+                                <th>Saler Name</th>
+                                <th>Project Name</th>
+                                <th>Product Name</th>
+                                <th>Sales Date</th>
                                 <th>Options</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>Cox Bazar</td>
-                                <td>Active</td>
+                                <td>Md Jakir</td>
+                                <td>Md Mahbur</td>
+                                <td>Cox Holiday Inn</td>
+                                <td>Standared Owner</td>
+                                <td>07/04/2024</td>
                                 <td>
+                                    <a href="#" class="btn btn-warning btn-sm">Set Schedule</a>
                                     <button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i>Edit</button>
                                     <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i>Delete</button>
-                                    <button class="btn btn-info btn-sm"><i class="fas fa-eye"></i>View</button>
                                 </td>
                             </tr>
                         </tbody>
